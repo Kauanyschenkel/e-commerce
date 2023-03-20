@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+/* MENU*/
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.logo{
+    width: 15%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 0;
+}
+.container_itens{
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+   
+}
+.titulo{
+    color: #2A7AE4;
+}
+.container_busca{
+    margin-left: 30px;
+}
+#txtBusca{
+    width: 400px;
+    position: relative;
+    border-radius: 20px;
+    top: 15px;
+    height: 20px;
+    background: #F5F5F5;
+    border-color:  #F5F5F5;
+}
+.lupa{
+    position: absolute;
+    left:49%;
+    top: 34px;
+    opacity: 0.5;
+}
+
+.main_adm {
+    position: relative;
+    display: inline;
+    top: 30px;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: 10px 50px 10px 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 400ms ease;
+}
+.main_adm:hover{
+    background-color: #0062cc;
+    color: white;
+    text-decoration: underline;
+}
+/*MOBILE CABEÇALHO*/
+
+@media (max-width:600px){
+    .container{
+        padding: 2vh;
+        justify-content: space-between;
+    }
+    #txtBusca{
+        display:none;
+    }
+    .lupa{
+        margin-left: 150px;
+        width: 27px;
+        top: 35px;
+    }
+    nav{
+       width: 30vh;
+       font-family: 'raleway';
+    }
+    .main_adm{
+        margin-left: -290px;
+        padding: 10px 30px 10px 30px;
+        top: 20px;
+    }
+    .titulo, h1{
+        font-size: 15px;
+    }
+}
+/*SESSÃO DE LOGIN*/
+
+.administrador{
+    margin-top: 100px;
+    background-color: #E5E5E5;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+   
+}
+.titulo_login{
+    color:#464646;
+   margin-left: 400px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    margin-left: 400px;
+    width: 556px;
+    height: 36px;
+    font-family: 'Raleway';
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    content: "Console";
+}
+.button{
+    width: 575px;
+    padding:  17px 0 17px 0;
+    text-align: center;
+    margin-left: 400px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+    text-decoration:underline;
+  }
+
+/*CONTATO*/
+.contato{
+    display: flex;
+    background-color:  #EAF2FD;
+    justify-content: space-around;
+    height: 268px;
+    padding: 64px;
+}
+.contato_logo{
+    display: flex;
+}
+.nav_list ul{
+    width: 25vh;
+    line-height: 50px;
+    list-style: none;
+   font-family: 'raleway';
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
+
+}
+
+ .tituloContato {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  input, textarea{
+    width: 466px;
+    height: 20px;
+    font-family: 'Raleway';
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .input2{
+    height: 82px;
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  button {
+    margin-left: -335px;
+    padding: 20px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+/*FOOTER*/
+
+footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer{
+   text-align: center;
+  }
+
+  @media (max-width:600px){ 
+    .administrador{
+        margin-left: -380px;
+    }
+    .card{
+        width: 338px;
+    }
+    .button{
+        width: 358px;
+    }
+.nav_list ul{
+    margin-left: 30px;
+}
+.contato{
+    flex-wrap: wrap;
+    height: 100%;
+}
+input, textarea{
+    width: 300px;
+}
+button{
+   margin-left: 0;
+}
+  }

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+/* MENU*/
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    width: 15%;
+}
+.container{
+    display: flex;
+   padding: 1% 12%;
+   background-color: #F5F5F5;
+  
+}
+nav{
+    display: flex;
+   
+}
+.titulo{
+    color: #2A7AE4;
+}
+.container_busca{
+    margin-left: 30px;
+}
+#txtBusca{
+    width: 400px;
+    position: relative;
+    border-radius: 20px;
+    top: 15px;
+    height: 20px;
+    background: #F5F5F5;
+    border-color:  #F5F5F5;
+}
+.lupa{
+    position: absolute;
+    left:51%;
+    top: 34px;
+    opacity: 0.5;
+}
+
+/*PRODUTOS PAGINA INICIAL*/
+.todosProdutos{
+    padding: 0% 10%;
+   
+}
+.card_adicionar{
+    text-decoration: none;
+    color: white;
+    background-color:  #2A7AE4;
+    padding: 16px;
+}
+.card_adicionar:hover{
+    text-decoration: underline;
+}
+.produtos1, 
+.produtos2,
+.produtos3{
+    display: flex;
+    justify-content: space-around;
+    left: 30px;
+}
+
+.produtos2,
+.produtos3{
+    margin-top: 50px;
+}
+.tittle_produtos{ 
+    display: inline;
+    font-style: bold;
+    font-size: 32px;
+    line-height: 90px;
+    color: #464646;
+    margin-right: 62%;
+}
+
+
+.link_card{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:  #2A7AE4;
+}
+.link_card:hover{
+    text-decoration: underline;
+}
+.nomeProduto{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.valorProduto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*CONTATO*/
+.contato{
+    display: flex;
+    background-color:  #EAF2FD;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 268px;
+    padding: 64px;
+}
+.contato_logo{
+    display: flex;
+}
+.nav_list ul{
+    line-height: 50px;
+    list-style: none;
+   font-family: 'raleway';
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
+
+}
+
+ .tituloContato {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  input, textarea{
+    width: 466px;
+    height: 20px;
+    font-family: 'Raleway';
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .input2{
+    height: 82px;
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  button {
+    margin-left: -335px;
+    padding: 20px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+/*FOOTER*/
+
+footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer{
+   text-align: center;
+  }
+
+  
+  @media (max-width:600px){
+    .container{
+        padding: 3vh;
+    }
+    #txtBusca{
+        display:none;
+    }
+    .lupa{
+        margin-left: 150px;
+        width: 27px;
+        top: 35px;
+    }
+    nav{
+       width: 30vh;
+       font-family: 'raleway';
+    }
+    .tittle_produtos{
+        display: flex;
+        width: 60%;
+        margin-top: 0;
+        padding: 0 5%;
+        flex-direction: column;
+    }
+    .card_adicionar{
+        margin: 5%;
+    }
+    /*CABECALHO*/
+   
+    .todosProdutos{
+    display: inline;
+}
+    .produtos1{
+        margin-top: 50px;
+    }
+    .nav_list ul{
+        margin-left: 30px;
+    }
+    .contato{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    input, textarea{
+        width: 300px;
+    }
+    button{
+       margin-left: 0;
+    }
+    }
